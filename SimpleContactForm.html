@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Simple Contact Form</title>
+</head>
+<body>
+    <h1>SIMPLE CONTACT FORM</h1>
+    <div id="form1">
+    <br><br><br>
+        <label>FIRST NAME</label><br>
+        <input type="text" title="First Name" name="" class="textfield" id="firstName"><br>
+        <label>LAST NAME</label><br>
+        <input type="text" title="Last Name" name="" class="textfield" id="lastName"><br>
+        <label>EMAIL</label><br>
+        <input type="text" title="Email" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "27" name="" class="textfield" id="email"><br>
+        <label>PHONE NUMBER</label><br>
+        <input type="number" title="Phone" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "11" name="" class="textfield" id="phoneNumber">
+        <label>CITY</label><br> 
+        <input type="text" title="City" name="" class="textfield" id="city">
+        <button id="btnAddPerson" onclick="addData()">Add Person</button>
+        <button id="btnShowData" onclick="showData()">Show Data</button>
+        <button id="btnClear" onclick="clearFields()">Clear</button>
+    
+</div>
+    <div id="personData">
+
+    </div>
+</body>
+<script src="dist/main.js"></script>
+</html>
